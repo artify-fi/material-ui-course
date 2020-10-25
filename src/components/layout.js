@@ -17,7 +17,9 @@ const useStyles = makeStyles({
 })
 
 const Layout = ({ children }) => {
+
   const classes = useStyles()
+
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
